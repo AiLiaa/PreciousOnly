@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情</title>
+
+    <!--  全部css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css//icofont.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- 导航栏start -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="header_content">
+                <!-- logo图 -->
+                <div class="header_logo">
+                    <a href="index.html">
+                        <span class="gradient-text-orange NFT-Logo">NFT</span>
+                    </a>
+                </div>
+                <!-- 导航栏 快速搜索 -->
+                <form action="#" class="header_search">
+                    <input type="text" placeholder="搜你想要">
+                    <button type="button"><i class="icofont-search-2"></i></button>
+                    <button type="button" class="close"><i class="icofont-close"></i></button><!-- 缩小隐藏按钮 -->
+                </form>
+                <!-- 导航栏中间按钮 -->
+                <div class="header_menu ms-auto">
+                    <ul class="header_nav mb-0">
+                        <li class="header_nav-item">
+                            <a class="header_nav_link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">交易市场</a>
+
+                            <ul class="dropdown-menu header_nav_menu">
+                                <li><a class="drop-down-item active" href="market.html">全部</a></li>
+                                <li><a class="drop-down-item" href="market.html">绘画</a></li>
+                                <li><a class="drop-down-item" href="market.html">音乐</a></li>
+                            </ul>
+                        </li>
+                        <li class="header_nav-item">
+                            <a class="header_nav_link" href="createNFT.html" role="button">作品上传</a>
+                        </li>
+                        <li class="header_nav-item">
+                            <a class="header_nav_link" href="index.html#about-nft" role="button">关于NFT</a>
+                        </li>
+                        <li class="header_nav-item">
+                            <a class="header_nav_link" href="personalCenter.html" role="button">个人中心</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 导航栏右边按钮 -->
+                <div class="header_actions">
+                    <div class="header_action header_action_search">
+                        <button class="header_action-btn" type="button"><i class="icofont-search-1"></i></button>
+                    </div>
+
+                    <div class="header_action header_action_loginandregistration">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" aria-haspopup="true" data-bs-offset="0,15">
+                                <span><i class="icofont-user"></i></span> <span class="d-none d-md-inline" id="sign-reg">登录/注册</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li id="li-signup">
+                                    <a class="dropdown-item" href="signIn.html">
+                                        <span class="me-1"><i class="icofont-login"></i></span>
+                                        登录
+                                    </a>
+                                </li>
+                                <li id="li-register"><a class="dropdown-item" href="register.html"><span class="me-1">
+                                            <span class="me-1"><i class="icofont-space-shuttle"></i></span>
+                                            注册
+                                    </a>
+                                </li>
+                                <li id="dropdown-divider-hr">
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li id="li-exit" style="display: none;">
+                                    <a class="dropdown-item" href="#">
+                                        退出<span class="ms-1"><i class="icofont-logout"></i></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact-btn">
+
+                        <a href="#" class="contact-a">
+                            <svg t="1648105651080" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" p-id="2685" width="28" height="28">
+                                <path
+                                    d="M848.072 664.924c13.088-29.448 22.282-60.652 27.061-93.147 27.2-44.12 42.7-94.766 42.7-148.616 0-171.16-156.288-309.891-349.042-309.891-42.915 0-83.995 6.889-121.976 19.476-40.822 0.483-80.301 6.148-117.6 16.36 65.972-46.668 149.115-74.583 239.576-74.583 214.177 0 387.823 156.09 387.823 348.638 0 93.903-41.364 179.078-108.542 241.763zM840.27 520.01c0 192.548-173.647 348.655-387.824 348.655-27.295 0-53.918-2.566-79.612-7.404l-133.72 90.96 0.095-141.023C134.049 748.825 64.597 641.728 64.597 520.01c0-192.548 173.638-348.637 387.85-348.637 214.175 0 387.823 156.09 387.823 348.637z m-736.892 0c0 6.836 0.306 13.605 0.792 20.339 0.142 1.72 0.357 3.461 0.52 5.183 0.45 4.873 0.97 9.712 1.67 14.517 0.342 2.324 0.77 4.6 1.15 6.887 0.737 4.307 1.524 8.543 2.458 12.78a315.626 315.626 0 0 0 1.58 6.664 293.853 293.853 0 0 0 3.573 13.122c0.573 1.878 1.11 3.79 1.723 5.665 1.49 4.631 3.125 9.195 4.848 13.726 0.594 1.602 1.167 3.202 1.795 4.789a283.676 283.676 0 0 0 7.31 16.686c0.16 0.343 0.301 0.69 0.466 1.034 8.89 18.46 19.77 35.956 32.32 52.35 0.214 0.294 0.429 0.551 0.645 0.826 20.72 26.917 46.006 50.838 74.997 70.727v-0.293a354.116 354.116 0 0 0 38.549 23.025v0.259c0.198 0.104 0.412 0.172 0.612 0.291l-0.216 42.864c-0.017 0-0.017-0.018-0.035-0.018l0.018 2.257-0.257 48.89 0.655-0.465v0.277l46.607-33.03c-0.129-0.034-0.25-0.087-0.379-0.122l40.78-29c0.163 0.034 0.335 0.086 0.499 0.122l0.439-0.311c17.703 4.012 35.94 6.8 54.59 8.387l-0.24 0.17c2.272 0.173 4.572 0.276 6.87 0.433 1.585 0.086 3.142 0.188 4.701 0.275 6.63 0.362 13.295 0.62 20.027 0.62 192.754 0 349.035-138.766 349.035-309.926S645.2 210.103 452.446 210.103c-192.788 0-349.068 138.748-349.068 309.907z"
+                                    fill="#a910e1" p-id="2686"></path>
+                            </svg>
+                            <span class="d-none d-md-inline">联系我们</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- 响应隐藏图标 -->
+                <button class="menu-trigger header_btn" id="menu05">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- 导航 end -->
+    <main>
+        <section class="pruducts-details-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="preducts-details-wrap">
+                            <div class="products-thumb-img">
+                                <img src="images/Cube1.jpg" alt="">
+                            </div>
+                            <hr>
+                            <div class="products-details-content">
+                                <h4 class="title">标签:<span style="margin-left: 5%;">原石</span></h4>
+                                <hr>
+                                <h4 class="title">详情</h4>
+                                <p>详情描述详情描述详情描述详情描述详情描述详情描述详情描述详情描述详情描述详情描述详情描述详情描述详情描述详情描述</p>
+                                <hr>
+                                <!-- <div class="products-details-list">
+                                    <h5 class="title">特点</h5>
+                                    <ul>
+                                        <li>特点1</li>
+                                        <li>特点2</li>
+                                        <li>特点3</li>
+                                        <li>特点4</li>
+                                        <li>特点5</li>
+                                        <li>特点6</li>
+                                        <li>特点7</li>
+                                    </ul>
+                                </div> -->
+                                <h4 class="title">购买须知</h4>
+                                <p>购买须知购买须知购买须知购买须知购买须知购买须知购买须知购买须知购买须知购买须知购买须知</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-5">
+                        <aside class="products-details-sidebar">
+                            <div class="product-purchase-info">
+                                <ul class="product-purchase-meta">
+                                    <li class="rating"><a class="" href="#"><svg t="1648626920872" class="icon"
+                                                viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                p-id="2173" width="48" height="24">
+                                                <path
+                                                    d="M910.88 364.8l-1.28-10.08a236.96 236.96 0 0 0-6.24-28 201.44 201.44 0 0 0-42.56-80 46.08 46.08 0 0 0-3.84-4.48 212 212 0 0 0-160-71.68c-75.68 0-146.72 29.76-185.12 74.08-38.4-44.32-109.6-74.08-185.12-74.08a212 212 0 0 0-160 71.68 46.08 46.08 0 0 0-3.84 4.48 201.44 201.44 0 0 0-42.56 80 236.96 236.96 0 0 0-6.24 28l-1.28 10.08A186.4 186.4 0 0 0 112 385.92a205.28 205.28 0 0 0 1.12 21.28c16 194.08 368 423.2 382.88 432.96l16 10.4 16-10.4c15.04-9.6 367.04-238.72 382.88-432.96a205.28 205.28 0 0 0 1.12-21.28 186.4 186.4 0 0 0-1.12-21.12z"
+                                                    fill="#a910e1" p-id="2174"></path>
+                                            </svg></a>7 k</li>
+                                    <li class="share">
+                                        <a href="#"><svg t="1648629598433" class="icon" viewBox="0 0 1024 1024"
+                                                version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3192" width="32"
+                                                height="32">
+                                                <path
+                                                    d="M763.84 896c-47.128 0-85.333-38.205-85.333-85.333s38.205-85.333 85.333-85.333c47.128 0 85.333 38.205 85.333 85.333 0 47.128-38.205 85.333-85.333 85.333M329.92 558.848c-14.895 26.231-42.641 43.638-74.453 43.638-47.128 0-85.333-38.205-85.333-85.333 0-16.097 4.457-31.152 12.204-44 14.935-24.769 42.098-41.333 73.13-41.333 47.128 0 85.333 38.205 85.333 85.333 0 15.317-4.035 29.691-11.101 42.117M763.84 128c47.128 0 85.333 38.205 85.333 85.333s-38.205 85.333-85.333 85.333c-47.128 0-85.333-38.205-85.333-85.333 0-47.128 38.205-85.333 85.333-85.333M763.84 682.667c-0.021 0-0.047 0-0.072 0-39.16 0-74.203 17.626-97.628 45.378l-289.885-167.063c4.932-13.101 7.787-28.245 7.787-44.055 0-0.105 0-0.209 0-0.314 0-0.072 0-0.177 0-0.281 0-15.81-2.855-30.953-8.077-44.942l295.544-169.566c23.265 24.363 56.001 39.509 92.275 39.509 0.020 0 0.039 0 0.059 0 70.689 0 127.997-57.308 127.997-128 0-70.692-57.308-128-128-128-70.692 0-128 57.308-128 128 0 18.965 4.224 36.907 11.627 53.099l-292.288 168.747c-23.653-28.833-59.285-47.084-99.18-47.084-70.692 0-128 57.308-128 128 0 0.188 0 0.376 0.001 0.564-0.001 0.123-0.001 0.304-0.001 0.484 0 70.692 57.308 128 128 128 39.895 0 75.526-18.251 99.001-46.86l289.373 166.752c-5.397 13.568-8.529 29.29-8.533 45.743 0 70.582 57.308 127.889 128 127.889 70.692 0 128-57.308 128-128 0-70.692-57.308-128-128-128z"
+                                                    fill="#3D3D3D" p-id="3193"></path>
+                                            </svg></a>
+                                    </li>
+                                </ul>
+                                <ul class="product-purchase-list">
+                                    <li class="items">上架时间<span>77:77</span></li>
+                                    <hr>
+                                    <li class="items">作品名<span>77</span></li>
+                                    <li class="items">价格<span>77</span></li>
+                                    <li class="items">作品ID<span>777777</span></li>
+                                    <li class="items">类型<span>绘画</span></li>
+                                </ul>
+                                <hr>
+                                <div class="products-details-action">
+                                    <a href="#" class="default-btn" data-bs-toggle="modal" data-bs-target="#Confirm-purchase">购买</a>
+                                </div>
+                            </div>
+                            <div class="also-like-product">
+                                <h5 class="title">猜你喜欢<a href="market.html" class="see-more">更多</a>
+                                </h5>
+                                <ul class="also-product-list">
+                                    <li><a href="market.html"><img src="images/product_thumb01.jpg" alt=""></a></li>
+                                    <li><a href="market.html"><img src="images/product_thumb02.jpg" alt=""></a></li>
+                                    <li><a href="market.html"><img src="images/product_thumb03.jpg" alt=""></a></li>
+                                    <li><a href="market.html"><img src="images/product_thumb04.jpg" alt=""></a></li>
+                                    <li><a href="market.html"><img src="images/product_thumb05.jpg" alt=""></a></li>
+                                    <li><a href="market.html"><img src="images/product_thumb06.jpg" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- 模态框-确认购买 -->
+            <div class="modal fade" id="Confirm-purchase">
+                <div class="modal-dialog modal-dialog-centered  modal-sm">
+                    <div class="modal-content">
+
+                        <!-- 模态框头部 -->
+                        <div class="modal-header">
+                            <h4 class="modal-title-2">确认购买此作品？</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- 模态框内容 -->
+                        <div class="modal-body">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                style="float: left;margin-left: 20%;" data-bs-toggle="modal" data-bs-target="#Confirm-purchase-password">
+                                确定
+                            </button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
+                                style="float: right;margin-right: 20%;">取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- 模态框-确认购买-输入密码 -->
+             <div class="modal fade" id="Confirm-purchase-password">
+                <div class="modal-dialog modal-dialog-centered  modal-sm">
+                    <div class="modal-content">
+
+                        <!-- 模态框头部 -->
+                        <div class="modal-header">
+                            <h4 class="modal-title-2">请输入密码确认购买</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- 模态框内容 -->
+                        <div class="modal-body">
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="modify-name" placeholder="">
+                                <label for="modify-name">密码</label>
+                            </div>
+                            <button type="button" class="btn btn-primary purchase" data-bs-dismiss="modal"
+                                style="float: left;margin-left: 20%;">确定</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
+                                style="float: right;margin-right: 20%;">取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--底部信息 链接-->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="header_logo">
+                        <a href="index.html">
+                            <span class="gradient-text-orange NFT-Logo">NFT</span>
+                        </a>
+                    </div>
+                    <div class="index-account-bottom">
+                        <ul class="social-media d-flex justify-content-center">
+                            <li>
+                                <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+
+                            </li>
+                            <li>
+                                <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-link">
+                        <h5>Category</h5>
+                        <ul>
+                            <li>
+                                <a href="#">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms</a>
+                            </li>
+                            <li>
+                                <a href="#">Customer Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-link">
+                        <h5>Trading market</h5>
+                        <ul>
+                            <li>
+                                <a href="#">All Products</a>
+                            </li>
+                            <li>
+                                <a href="#">Music</a>
+                            </li>
+                            <li>
+                                <a href="#">Picture</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-link">
+                        <h5>Help</h5>
+                        <ul>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">About NFT</a>
+                            </li>
+                            <li>
+                                <a href="#">About </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subfooter">
+            <p> Copyright © 2022 <a href="index.html">NFT.</a> All rights By <a href="index.html">nft</a>.</p>
+        </div>
+    </footer>
+    <!--  全部js -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/functions.js"></script>
+</body>
+
+</html>
